@@ -1,0 +1,57 @@
+
+
+
+Daily Todo:
+
+
+ - clean up
+ - create animation controller
+
+ - create another page
+ - create page controlls ()
+
+ - create animation container ( respnosive (test with black))
+    - desktop (min height) + controlls
+    - mobile (100vh) + flex + controlls
+
+
+
+- create page 7- 10 (most animations see errors)
+
+
+
+
+
+
+Parts:
+    - custom data layer
+    - responsive animation 
+    - explanation tag (animated)
+    - menu (mobile / web)
+
+- create plan for data layer (especially for nested created objects9
+    - [objectID]: name => subscribe 
+    - 
+
+
+
+
+
+
+// how to recreate timeline safely???
+
+
+goals: on resize
+    - pause at any point
+    - move element to last landing
+    - on resize continue to move to last landing
+    
+    debounced: 500ms?
+    - recreate timeline
+    - resume playing timeline from point x
+
+
+
+// reset to (big starting points) main animation / animation in
+
+// add shifting rows and test again 

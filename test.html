@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style >
+        .frame{
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="dist/index.html" id="idIframe" class="frame"  onload="iframeLoaded()"></iframe>
+
+    <script type="text/javascript">
+        function iframeLoaded() {
+            var iFrameID = document.getElementById('idIframe');
+            if(iFrameID) {
+                  // here you can make the height, I delete it first, then I make it again
+                  iFrameID.height = "";
+                  iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+            }   
+        }
+      </script>   
+</body>
+</html>

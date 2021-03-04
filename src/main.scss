@@ -1,0 +1,168 @@
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background--yellow{
+    background: yellow;
+}
+
+
+html, body{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+}
+
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    max-width: 1080px;
+}
+
+.movable{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.rijndael-animation{
+    background: green;
+    width: 100%;
+
+
+
+    max-width: 1000px;
+    min-height: 30rem;
+
+
+
+    &__animation-container{
+
+    }
+
+    &__animation-frame{
+        overflow: hidden;
+        width: 100%;
+        min-height: 30rem;
+        background: red;
+        position: relative;
+    }
+
+    &__page{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+}
+
+
+
+/* RIJNDAEL GRID STYLES */
+
+.rijndael-grid{
+
+
+    display: grid;
+
+    width: 30%;
+    height: 12rem;
+
+    &__cell{
+
+        border: 1px solid #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        color: #333;
+
+
+
+
+        &--yellow{
+            background: yellow;
+        }
+    }
+}
+
+
+
+/* ANIMATABLE BACKGROUND */
+
+.rijndael-animatable-background{
+
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: relative;
+
+    &__page{
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title-container{
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem 2rem;
+    }
+
+    &__title{
+        font-size: 2rem;
+        color: #fff;
+        position: relative;
+    }
+
+    &__title-mask{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: green;
+        position: absolute;
+    }
+
+    &__background{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: green;
+        z-index: 2;
+    }
+
+    &__bar{
+        height: 2rem;
+        width: 100%;
+        background: #fff;
+    }
+
+    &__body{
+        flex: 1;
+    }
+
+    &__header{
+
+    }
+}
